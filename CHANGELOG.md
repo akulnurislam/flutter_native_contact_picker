@@ -1,3 +1,9 @@
+## 0.0.13
+* Migrate Android to Built-in Kotlin: stop applying `kotlin-android`, drop `kotlinOptions`, and use the `kotlin { compilerOptions {} }` DSL (Flutter applies KGP automatically when built-in Kotlin is disabled).
+* Raise minimum Flutter to 3.44.0 / Dart SDK to ^3.12.0.
+* Drop the AGP classpath so the plugin builds with the app's AGP 9.
+* Bump `plugin_platform_interface` to ^2.1.8.
+
 ## 0.0.12
 * Add Swift Package Manager support for iOS (alongside CocoaPods), per [Flutter SPM plugin guide](https://docs.flutter.dev/packages-and-plugins/swift-package-manager/for-plugin-authors).
 * Raise minimum Flutter to 3.41.0 and Dart SDK to ^3.11.0 for `FlutterFramework` SPM integration.
